@@ -1,0 +1,7 @@
+id: '4b1efaf2-bc90-4b16-7366-08dd7ccec69f'
+name: 'MB_Databricks_Stage_JDBCGenerator'
+description: ''
+version: 'v1.5'
+configuration:
+  id: 'biGENIUS.Implementation.Generator.Stage.Spark.Databricks.Jdbc'
+  version: '1.8.0'
