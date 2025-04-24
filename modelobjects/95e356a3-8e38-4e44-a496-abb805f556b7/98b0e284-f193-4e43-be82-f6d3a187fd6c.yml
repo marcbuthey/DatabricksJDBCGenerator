@@ -1,5 +1,6 @@
 id: '98b0e284-f193-4e43-be82-f6d3a187fd6c'
-name: 'shipments'
+name: 'dbo.shipments'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: '6c136d17-b893-40fc-97cf-8db329f57218'
