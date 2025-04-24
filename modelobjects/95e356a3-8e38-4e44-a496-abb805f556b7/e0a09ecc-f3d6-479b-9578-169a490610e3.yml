@@ -1,5 +1,6 @@
 id: 'e0a09ecc-f3d6-479b-9578-169a490610e3'
-name: 'stores'
+name: 'dbo.stores'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: 'e2cbba06-ff2d-4517-8ec6-bed273af622b'
