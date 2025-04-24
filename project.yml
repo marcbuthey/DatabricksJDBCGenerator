@@ -11,3 +11,6 @@ sourceSystems:
     description: ''
     activeDiscovery: '1d411f14-1d46-42ec-9417-1fa6fce64a96'
     sourceSystemTypeId: 'a2bdfa5d-f1f2-4700-8f97-4567decdcb2d'
+propertyValues:
+  - propertyId: '59eca19a-3bec-4169-85fd-41331f6fac3a'
+    value: 'true'
