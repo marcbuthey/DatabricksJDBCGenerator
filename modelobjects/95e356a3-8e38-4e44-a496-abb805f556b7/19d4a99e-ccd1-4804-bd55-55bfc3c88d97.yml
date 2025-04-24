@@ -1,5 +1,6 @@
 id: '19d4a99e-ccd1-4804-bd55-55bfc3c88d97'
-name: 'customer_order_products'
+name: 'dbo.customer_order_products'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: '7f598204-ad57-426c-877e-cf60866ddd32'
