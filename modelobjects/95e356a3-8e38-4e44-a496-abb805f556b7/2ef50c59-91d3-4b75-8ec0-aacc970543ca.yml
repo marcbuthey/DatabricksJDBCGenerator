@@ -1,5 +1,6 @@
 id: '2ef50c59-91d3-4b75-8ec0-aacc970543ca'
-name: 'store_orders'
+name: 'dbo.store_orders'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: '068181c1-1da5-4898-922c-5d2587e5f492'
