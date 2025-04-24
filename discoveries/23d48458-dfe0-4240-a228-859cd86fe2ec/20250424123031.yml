@@ -1,0 +1,899 @@
+id: '1d411f14-1d46-42ec-9417-1fa6fce64a96'
+name: 'AzureSQL'
+appVersion: '1.4.0'
+timestamp: '2025-04-24T12:30:31+00:00'
+sourceObjects:
+  - name: 'customer_order_products'
+    terms:
+      - name: 'order_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'order_tms'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'datetime'
+          isNullable: false
+      - name: 'order_status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 10
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 10
+      - name: 'customer_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'email_address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'full_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'order_total'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 38
+          scale: 2
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 38
+          scale: 2
+      - name: 'items'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 8000
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 8000
+    objectType: {}
+  - name: 'customers'
+    terms:
+      - name: 'customer_id'
+        isBusinessKey: true
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'email_address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'full_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+    objectType: {}
+  - name: 'inventory'
+    terms:
+      - name: 'inventory_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'store_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'product_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'product_inventory'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+    objectType: {}
+  - name: 'order_items'
+    terms:
+      - name: 'order_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'line_item_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'product_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'unit_price'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 10
+          scale: 2
+        sourceDataType:
+          name: 'decimal'
+          isNullable: false
+          precision: 10
+          scale: 2
+      - name: 'quantity'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'shipment_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: true
+          precision: 10
+          scale: 0
+    objectType: {}
+  - name: 'orders'
+    terms:
+      - name: 'order_id'
+        isBusinessKey: true
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'order_tms'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'datetime'
+          isNullable: false
+      - name: 'customer_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'order_status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 10
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 10
+      - name: 'store_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+    objectType: {}
+  - name: 'product_orders'
+    terms:
+      - name: 'product_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'order_status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 10
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 10
+      - name: 'total_sales'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 38
+          scale: 2
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 38
+          scale: 2
+      - name: 'order_count'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: true
+          precision: 10
+          scale: 0
+    objectType: {}
+  - name: 'product_reviews'
+    terms:
+      - name: 'product_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'rating'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: true
+          precision: 10
+          scale: 0
+      - name: 'avg_rating'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: true
+          precision: 10
+          scale: 0
+      - name: 'review'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 4000
+        sourceDataType:
+          name: 'nvarchar'
+          isNullable: true
+          length: 4000
+    objectType: {}
+  - name: 'products'
+    terms:
+      - name: 'product_id'
+        isBusinessKey: true
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'product_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'unit_price'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 10
+          scale: 2
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 10
+          scale: 2
+      - name: 'product_details'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'binary'
+        sourceDataType:
+          name: 'varbinary'
+          isNullable: true
+          length: -1
+      - name: 'product_image'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'binary'
+        sourceDataType:
+          name: 'varbinary'
+          isNullable: true
+          length: -1
+      - name: 'image_mime_type'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'image_filename'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'image_charset'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'image_last_updated'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'datetime'
+          isNullable: true
+    objectType: {}
+  - name: 'shipments'
+    terms:
+      - name: 'shipment_id'
+        isBusinessKey: true
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'store_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'customer_id'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'delivery_address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 512
+      - name: 'shipment_status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 100
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 100
+    objectType: {}
+  - name: 'store_orders'
+    terms:
+      - name: 'total'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 12
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 12
+      - name: 'store_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 255
+      - name: 'address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'latitude'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 9
+          scale: 6
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 9
+          scale: 6
+      - name: 'longitude'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 9
+          scale: 6
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 9
+          scale: 6
+      - name: 'order_status'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 10
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 10
+      - name: 'order_count'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: true
+          precision: 10
+          scale: 0
+      - name: 'total_sales'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 38
+          scale: 2
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 38
+          scale: 2
+    objectType: {}
+  - name: 'stores'
+    terms:
+      - name: 'store_id'
+        isBusinessKey: true
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'integer'
+          precision: 10
+          scale: 0
+        sourceDataType:
+          name: 'int'
+          isNullable: false
+          precision: 10
+          scale: 0
+      - name: 'store_name'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 255
+        sourceDataType:
+          name: 'varchar'
+          isNullable: false
+          length: 255
+      - name: 'web_address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 100
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 100
+      - name: 'physical_address'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'latitude'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 9
+          scale: 6
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 9
+          scale: 6
+      - name: 'longitude'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'decimal'
+          precision: 9
+          scale: 6
+        sourceDataType:
+          name: 'decimal'
+          isNullable: true
+          precision: 9
+          scale: 6
+      - name: 'logo'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'binary'
+        sourceDataType:
+          name: 'varbinary'
+          isNullable: true
+          length: -1
+      - name: 'logo_mime_type'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'logo_filename'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'logo_charset'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'string'
+          length: 512
+        sourceDataType:
+          name: 'varchar'
+          isNullable: true
+          length: 512
+      - name: 'logo_last_updated'
+        isBusinessKey: false
+        isDefaultTerm: false
+        isForeignKey: false
+        isIdentity: false
+        dataType:
+          name: 'timestamp'
+        sourceDataType:
+          name: 'datetime'
+          isNullable: true
+    objectType: {}
+sourceSystem:
+  type: 'Microsoft SQL Server'
