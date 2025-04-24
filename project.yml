@@ -4,7 +4,7 @@ description: ''
 version: 'v1.5'
 configuration:
   id: 'biGENIUS.Implementation.Generator.Stage.Spark.Databricks.Jdbc'
-  version: '1.8.0'
+  version: '1.9.0'
 sourceSystems:
   - id: '23d48458-dfe0-4240-a228-859cd86fe2ec'
     name: 'bigenius-source-server.database.windows.net'
