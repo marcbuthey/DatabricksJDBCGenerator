@@ -1,5 +1,6 @@
 id: 'fb782936-3357-4c0c-8fad-cfee9fc9da0d'
-name: 'inventory'
+name: 'dbo.inventory'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: 'c56a0490-9d69-4f08-b205-0611c101ed9a'
