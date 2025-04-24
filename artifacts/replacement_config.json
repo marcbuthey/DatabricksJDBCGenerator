@@ -1,0 +1,90 @@
+{
+	"environments": [
+		{
+			"name": "DEV",
+			"projects": [
+				{
+					"name": "MB_Databricks_Stage_JDBCGenerator",
+					"variables": [
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#stage#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#stage#schema_name",
+							"value": "stage",
+							"secretname": ""
+						},
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#bigenius-source-server.database.windows.net#jdbc_url",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#bigenius-source-server.database.windows.net#jdbc_driver",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#bigenius-source-server.database.windows.net#jdbc_user",
+							"value": "dbutils.secrets.get(scope='', key='')",
+							"secretname": ""
+						},
+						{
+							"name": "mb_databricks_stage_jdbcgenerator#bigenius-source-server.database.windows.net#jdbc_password",
+							"value": "dbutils.secrets.get(scope='', key='')",
+							"secretname": ""
+						}
+					]
+				},
+				{
+					"name": "notebook_orchestration",
+					"variables": [
+						{
+							"name": "notebook_orchestration#notebook_orchestration#run_notebook_timeout",
+							"value": "3600",
+							"secretname": ""
+						},
+						{
+							"name": "notebook_orchestration#notebook_orchestration#loader_folder_path",
+							"value": "../Jupyter/",
+							"secretname": ""
+						}
+					]
+				},
+				{
+					"name": "loadcontrol",
+					"variables": [
+						{
+							"name": "loadcontrol#loadcontrol#database_name",
+							"value": "datalakehouse",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#schema_name",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#log_table_name",
+							"value": "execution_log",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#application_name",
+							"value": "",
+							"secretname": ""
+						},
+						{
+							"name": "loadcontrol#loadcontrol#application_environment_name",
+							"value": "DEV",
+							"secretname": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"secretprovider": {}
+}
