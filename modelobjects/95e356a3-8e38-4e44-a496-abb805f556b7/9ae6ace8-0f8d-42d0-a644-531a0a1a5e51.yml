@@ -1,5 +1,6 @@
 id: '9ae6ace8-0f8d-42d0-a644-531a0a1a5e51'
-name: 'product_reviews'
+name: 'dbo.product_reviews'
+isDeactivated: false
 modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
 terms:
   - id: '73b682ae-d2fa-4daa-ad51-f10ff0e0ca3c'
